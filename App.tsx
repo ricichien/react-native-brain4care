@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import { StatusBar } from "react-native";
+import { BackHandler, StatusBar } from "react-native";
 import { colors } from "./app/constants/theme";
 
 import Login from "./app/screens/Login/Login";
@@ -13,6 +13,18 @@ const Drawer = createDrawerNavigator();
 const Stack = createNativeStackNavigator();
 
 const App = () => {
+  useEffect(() => {
+    const backAction = () => {
+      return true;
+    };
+    const backHandler = BackHandler.addEventListener(
+      "hardwareBackPress",
+      backAction
+    );
+
+    return () => backHandler.remove();
+  }, []);
+
   return (
     <NavigationContainer>
       <Drawer.Navigator
