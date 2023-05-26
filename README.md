@@ -35,11 +35,10 @@ yarn dev
 ```bash
 npm start
 
-#or
+# or
 
-
-   yarn install
-  ```
+yarn install
+```   
  
 This will start the Expo Metro Bundler and provide you with a QR code.
 
