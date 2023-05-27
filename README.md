@@ -2,7 +2,9 @@
 
 This project is a mobile app developed using React Native, Axios, and JWT. It was created as a challenge from Brain4Care.
 
-[![image](https://github.com/ricichien/react-native-brain4care/assets/85197053/5a7789d4-b6af-415f-87fc-4187e38f8961)](https://www.youtube.com/watch?v=AFoCacRrhhM&t=48s)
+![image](https://github.com/ricichien/react-native-brain4care/assets/85197053/5a7789d4-b6af-415f-87fc-4187e38f8961)
+
+(https://www.youtube.com/watch?v=AFoCacRrhhM&t=48s)
 
 ## Stack and Libraries
 
