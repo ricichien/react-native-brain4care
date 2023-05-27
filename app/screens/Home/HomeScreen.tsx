@@ -47,7 +47,7 @@ interface RouteParams {
   };
 }
 
-const Home: React.FC = () => {
+const HomeScreen: React.FC = () => {
   const [ecgReports, setECGReports] = useState<ReportItem[]>([]);
   const [picniReports, setPICNIReports] = useState<ReportItem[]>([]);
   const navigation = useNavigation();
@@ -218,4 +218,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default HomeScreen;

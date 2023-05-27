@@ -5,8 +5,8 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import { BackHandler, StatusBar } from "react-native";
 import { colors } from "./app/constants/theme";
 
-import Login from "./app/screens/Login/Login";
-import Welcome from "./app/screens/Welcome/Welcome";
+import LoginScreen from "./app/screens/Login/LoginScreen";
+import WelcomeScreen from "./app/screens/Welcome/WelcomeScreen";
 import TabNavigator from "./app/navigations/TabNavigator";
 
 const Drawer = createDrawerNavigator();
@@ -30,10 +30,6 @@ const App = () => {
       <Drawer.Navigator
         initialRouteName="Welcome"
         screenOptions={{
-          drawerStyle: {
-            backgroundColor: colors.white,
-            width: 240,
-          },
           headerTintColor: colors.white,
           headerStyle: { backgroundColor: colors.white },
         }}
@@ -52,15 +48,16 @@ const App = () => {
         />
         <Stack.Screen
           name="Welcome"
-          component={Welcome}
+          component={WelcomeScreen}
           options={({}) => ({
             drawerItemStyle: { height: 0 },
             headerTitle: "",
+            headerShown: false,
           })}
         />
         <Stack.Screen
           name="Login"
-          component={Login}
+          component={LoginScreen}
           options={({}) => ({
             headerShown: false,
             title: "Log out",

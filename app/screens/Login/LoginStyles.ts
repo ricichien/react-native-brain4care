@@ -17,13 +17,11 @@ export const styles = StyleSheet.create({
     },
     box: {
       backgroundColor: colors.white,
-      borderRadius: 10,
+      borderRadius: 3,
       paddingHorizontal: 25,
       paddingBottom: 30,
       position: "relative",
       zIndex: 1,
-      shadowColor: colors.white,
-      elevation: 3,
     },
     boxContent: {
       justifyContent: "center",
@@ -64,18 +62,14 @@ export const styles = StyleSheet.create({
       borderWidth: 1,
       padding: 13,
       alignItems: "center",
-      backgroundColor: colors.white,
       borderRadius: 8,
-      opacity: 1,
-      elevation: 1,
-      shadowColor: colors.white,
-      shadowOpacity: 1,
+      opacity: 0.4
     },
     buttonSignUpText: {
       color: "#bababa",
       fontSize: 12,
       fontWeight: "400",
-      opacity: 1,
+      // opacity: 1,
     },
     buttonForgot: {
       marginTop: -5,

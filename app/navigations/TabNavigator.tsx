@@ -3,22 +3,22 @@ import { createMaterialTopTabNavigator } from "@react-navigation/material-top-ta
 import { StatusBar } from "react-native";
 
 import { colors } from "../constants/theme";
-import NearbyDevices from "../screens/NearbyDevices/NearbyDevices";
-import Home from "../screens/Home/Home";
-import ReportList from "../screens/ReportList/ReportList";
+import NearbyDevicesScreen from "../screens/NearbyDevices/NearbyDevicesScreen";
+import HomeScreen from "../screens/Home/HomeScreen";
+import ReportListScreen from "../screens/ReportList/ReportListScreen";
 
 const tabs = [
   {
     name: "Home",
-    screen: Home,
+    screen: HomeScreen,
   },
   {
     name: "Reports",
-    screen: ReportList,
+    screen: ReportListScreen,
   },
   {
     name: "Sensors",
-    screen: NearbyDevices,
+    screen: NearbyDevicesScreen,
   },
 ];
 

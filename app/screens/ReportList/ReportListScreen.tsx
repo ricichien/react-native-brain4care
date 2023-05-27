@@ -3,7 +3,7 @@ import { View, Text, Alert, TextInput, Switch, FlatList } from "react-native";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { Feather } from "@expo/vector-icons";
 import axios from "axios";
-import { styles } from "../ReportList/ReportListStyles";
+import { styles } from "./ReportListStyles";
 import { colors } from "../../constants/theme";
 
 interface ReportItem {
@@ -19,7 +19,7 @@ interface RouteParams {
   token: string;
 }
 
-const ReportList: React.FC = () => {
+const ReportListScreen: React.FC = () => {
   const [reports, setReports] = useState<ReportItem[]>([]);
   const [filteredReports, setFilteredReports] = useState<ReportItem[]>([]);
   const [searchQuery, setSearchQuery] = useState("");
@@ -213,4 +213,4 @@ const ReportList: React.FC = () => {
   );
 };
 
-export default ReportList;
+export default ReportListScreen;
